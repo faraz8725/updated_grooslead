@@ -1,4 +1,4 @@
-.navbar-wrapper {
+ .navbar-wrapper {
   position: fixed;
   top: 20px;
   left: 50%;
@@ -11,7 +11,6 @@
 .navbar {
   min-height: 72px;
   padding: 0 22px;
-
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -28,6 +27,10 @@
     0 12px 40px rgba(0, 0, 0, 0.45),
     0 0 25px rgba(255, 193, 7, 0.04);
 }
+
+/* =========================
+   LOGO
+========================= */
 
 .navbar-logo {
   display: flex;
@@ -48,6 +51,10 @@
 .logo-accent {
   color: #ffc107;
 }
+
+/* =========================
+   NAV LINKS
+========================= */
 
 .navbar-links {
   display: flex;
@@ -76,6 +83,7 @@
   font-weight: 500;
 
   cursor: pointer;
+
   transition: color 0.25s ease;
 }
 
@@ -105,6 +113,10 @@
   transform: scaleX(1);
 }
 
+/* =========================
+   SERVICES MENU
+========================= */
+
 .services-menu {
   position: relative;
 }
@@ -113,26 +125,53 @@
   font-family: inherit;
 }
 
+/* Arrow rotation */
+
+.services-chevron-open {
+  transform: rotate(180deg);
+  transition: transform 0.2s ease;
+}
+
+/* =========================
+   SERVICES DROPDOWN
+========================= */
+
+/*
+  IMPORTANT:
+  Dropdown is controlled by React state.
+  Do NOT use :hover here.
+*/
+
 .services-dropdown {
   position: absolute;
+
   top: calc(100% + 15px);
   left: 50%;
-  transform: translateX(-50%) translateY(8px);
+
+  transform: translateX(-50%) translateY(0);
 
   width: 235px;
   padding: 9px;
 
   background: rgba(12, 12, 12, 0.97);
+
   border: 1px solid rgba(255, 193, 7, 0.25);
+
   border-radius: 14px;
 
   box-shadow:
     0 20px 45px rgba(0, 0, 0, 0.55),
     4px 4px 0 rgba(255, 40, 40, 0.75);
 
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
+  /*
+    React only renders this element when
+    showServicesMenu === true.
+  */
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+
+  z-index: 1100;
 
   transition:
     opacity 0.2s ease,
@@ -140,13 +179,9 @@
     visibility 0.2s ease;
 }
 
-.services-menu:hover .services-dropdown {
-  opacity: 1;
-  visibility: visible;
-  pointer-events: auto;
-
-  transform: translateX(-50%) translateY(0);
-}
+/* =========================
+   SERVICE DROPDOWN ITEMS
+========================= */
 
 .service-dropdown-item {
   display: block;
@@ -159,6 +194,7 @@
   border-radius: 9px;
 
   font-size: 14px;
+
   transition:
     background 0.2s ease,
     color 0.2s ease,
@@ -175,14 +211,23 @@
   padding: 13px;
 
   color: #777777;
+
   font-size: 13px;
   text-align: center;
 }
+
+/* =========================
+   NAVBAR ACTIONS
+========================= */
 
 .navbar-actions {
   display: flex;
   align-items: center;
 }
+
+/* =========================
+   LOGIN BUTTON
+========================= */
 
 .login-button {
   display: inline-flex;
@@ -210,23 +255,36 @@
 
 .login-button:hover {
   background: #ffd54a;
+
   transform: translateY(-2px);
 
   box-shadow: 0 8px 25px rgba(255, 193, 7, 0.22);
 }
 
+/* =========================
+   PROFILE AREA
+========================= */
+
 .profile-area {
+  position: relative;
+
   display: flex;
   align-items: center;
-  gap: 8px;
+
+  gap: 10px;
 }
+
+/* =========================
+   PROFILE BUTTON
+========================= */
 
 .profile-button {
   width: 40px;
   height: 40px;
 
-  display: grid;
-  place-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   border: 1px solid rgba(255, 193, 7, 0.45);
   border-radius: 50%;
@@ -234,16 +292,23 @@
   background: rgba(255, 193, 7, 0.08);
 
   cursor: pointer;
-  transition: all 0.25s ease;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  transition: all 0.3s ease;
 }
 
 .profile-button:hover {
   background: #ffc107;
   border-color: #ffc107;
+
+  transform: translateY(-1px);
 }
 
 .profile-letter {
   color: #ffc107;
+
   font-size: 15px;
   font-weight: 800;
 }
@@ -251,6 +316,10 @@
 .profile-button:hover .profile-letter {
   color: #111111;
 }
+
+/* =========================
+   LOGOUT BUTTON
+========================= */
 
 .logout-button {
   width: 38px;
@@ -260,6 +329,7 @@
   place-items: center;
 
   color: #ff4545;
+
   background: rgba(255, 45, 45, 0.06);
 
   border: 1px solid rgba(255, 45, 45, 0.22);
@@ -272,11 +342,66 @@
 
 .logout-button:hover {
   color: #ffffff;
+
   background: #e53935;
   border-color: #e53935;
 }
 
-/* Tablet */
+/* =========================
+   PROFILE DROPDOWN
+========================= */
+
+.profile-dropdown {
+  position: absolute;
+
+  top: 50px;
+  right: 45px;
+
+  min-width: 180px;
+
+  background: #ffffff;
+
+  border: 1px solid #e5e5e5;
+  border-radius: 12px;
+
+  padding: 6px;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+
+  z-index: 1100;
+}
+
+/* Admin Dashboard Option */
+
+.profile-dropdown-item {
+  width: 100%;
+
+  border: none;
+  background: transparent;
+
+  padding: 11px 13px;
+
+  text-align: left;
+
+  font-size: 14px;
+  font-weight: 500;
+
+  color: #111111;
+
+  border-radius: 8px;
+
+  cursor: pointer;
+
+  transition: background 0.2s ease;
+}
+
+.profile-dropdown-item:hover {
+  background: #f5f5f5;
+}
+
+/* =========================
+   TABLET
+========================= */
 
 @media (max-width: 900px) {
   .navbar {
@@ -298,7 +423,9 @@
   }
 }
 
-/* Mobile */
+/* =========================
+   MOBILE
+========================= */
 
 @media (max-width: 720px) {
   .navbar-wrapper {
@@ -326,7 +453,10 @@
   .login-button {
     width: 40px;
     height: 40px;
+
     padding: 0;
+
     justify-content: center;
   }
 }
+

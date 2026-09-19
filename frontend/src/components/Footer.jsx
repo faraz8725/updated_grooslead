@@ -20,14 +20,14 @@ const Footer = () => {
           </p>
 
           <div className="footer-socials">
-            <a href="#" aria-label="Instagram">
-              Instagram
+            <a hrf="#" aria-label="Instagram">
+              
             </a>
 
-            <a href="#" aria-label="LinkedIn">
-              LinkedIn
+            <a hrf="#" aria-label="LinkedIn">
+              
             </a>
-          </div>
+          </div> 
         </div>
 
         <div className="footer-column">
@@ -52,12 +52,12 @@ const Footer = () => {
 
           <div className="footer-contact-item">
             <span>✉</span>
-            <span>hello@grosslead.com</span>
+            <span>business.grosslead@gmail.com</span>
           </div>
 
           <div className="footer-contact-item">
             <span>☎</span>
-            <span>+91 XXXXX XXXXX</span>
+            <span>+91 9650523337</span>
           </div>
 
           <div className="footer-contact-item">

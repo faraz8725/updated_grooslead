@@ -209,3 +209,47 @@
     padding: 90px 20px;
   }
 }
+
+
+
+
+/* Career Details */
+
+.career-description {
+  margin-bottom: 22px;
+}
+
+.career-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 28px;
+  margin-top: 18px;
+}
+
+.career-meta-item {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.career-meta-label {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #999;
+}
+
+.career-meta-value {
+  font-size: 14px;
+  font-weight: 500;
+  color: white;
+}
+
+@media (max-width: 600px) {
+  .career-meta {
+    flex-direction: column;
+    gap: 14px;
+  }
+}
+

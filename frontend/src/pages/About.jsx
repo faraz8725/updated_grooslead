@@ -19,8 +19,9 @@ const About = () => {
           </h1>
 
           <p>
-            We bring together creativity, technology and strategy to help
-            businesses create meaningful digital experiences.
+            Grosslead Media Private Limited is a next-generation digital marketing company specializing in programmatic advertising and high-quality lead generation. We focus on performance, and transparency, helping businesses achieve scalable growth through media buying and AI-driven campaign optimization.
+We connect advertisers with a vast network of ad exchanges and direct sites through our advanced media buying team, ensuring high-intent leads and maximum ROI.
+
           </p>
         </div>
       </section>
@@ -29,28 +30,26 @@ const About = () => {
         <div className="about-container">
           <div className="about-section-label">
             <span></span>
-            OUR STORY
+            OUR VISION AND MISSION
           </div>
 
           <div className="about-story-grid">
             <h2>
-              We believe great
+            
+              
+              <span>To be a global leader in</span>
               <br />
-              <span>digital experiences</span>
-              <br />
-              start with understanding.
+              digital marketing innovation
             </h2>
 
             <div className="about-story-text">
               <p>
-                Every business has a unique challenge. We take the time to
-                understand that challenge before thinking about the solution.
+                Empower businesses to thrive online through measurable and impactful marketing campaigns that deliver consistent growth and value.
+.
               </p>
 
               <p>
-                Our approach combines thoughtful design, modern technology and
-                practical thinking to create digital experiences that are
-                useful, scalable and built around real business goals.
+                .
               </p>
             </div>
           </div>
@@ -67,37 +66,37 @@ const About = () => {
           <div className="about-values-grid">
             <div className="about-value">
               <span>01</span>
-              <h3>Curiosity</h3>
+              <h3>Lead Generation for Automotive & Life Insurance
+</h3>
               <p>
-                We keep learning, exploring and looking for better ways to
-                solve problems.
+                We help automotive and life insurance businesses generate high-quality leads through targeted digital strategies.
               </p>
             </div>
 
             <div className="about-value">
               <span>02</span>
-              <h3>Creativity</h3>
+              <h3>Programmatic Advertising & Media Buying
+</h3>
               <p>
-                We look beyond the obvious to create experiences that feel
-                purposeful and distinctive.
+                We use smart programmatic strategies to reach the right audience across high-impact digital channels.
               </p>
             </div>
 
             <div className="about-value">
               <span>03</span>
-              <h3>Technology</h3>
+              <h3>Call-Verified Lead Qualification
+</h3>
               <p>
-                We use modern technology to turn ideas into reliable digital
-                solutions.
+                We verify every lead through real conversations to ensure genuine interest and intent.
               </p>
             </div>
 
             <div className="about-value">
               <span>04</span>
-              <h3>Growth</h3>
+              <h3>Scalable & High-Intent Lead Delivery
+</h3>
               <p>
-                We build with the future in mind so solutions can evolve as
-                businesses grow.
+               We deliver high-intent leads at scale, tailored to your business goals and target audience.
               </p>
             </div>
           </div>

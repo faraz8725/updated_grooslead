@@ -3,18 +3,18 @@ import "../styles/OurProcess.css";
 const steps = [
   {
     number: "01",
-    title: "Discover",
-    text: "We understand your goals, audience, challenges and requirements.",
+    title: "User Acquisition ",
+    text: "Identify and attract high-intent users",
   },
   {
     number: "02",
-    title: "Plan",
-    text: "We create a clear strategy and roadmap for the solution.",
+    title: "Ad Placement & Media Buying ",
+    text: "Run targeted campaigns on premium platforms",
   },
   {
     number: "03",
-    title: "Create",
-    text: "Our team turns the strategy into design, technology and experiences.",
+    title: "Lead Capture ",
+    text: "Drive users to optimized landing pages.",
   },
   {
     number: "04",
@@ -23,9 +23,15 @@ const steps = [
   },
   {
     number: "05",
-    title: "Grow",
-    text: "We continue improving the solution as your business evolves.",
+    title: "Call Center Verification ",
+    text: "Our dedicated team filters and verifies leads.",
   },
+{
+    number: "06",
+    title: "Call Center Verification  ",
+    text: "Only high-quality, verified leads are shared with clients.",
+  },
+
 ];
 
 const OurProcess = () => {

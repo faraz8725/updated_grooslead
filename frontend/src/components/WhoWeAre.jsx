@@ -21,15 +21,13 @@ const WhoWeAre = () => {
 
           <div className="who-text">
             <p>
-              Grosslead Media is a digital and technology-focused company
-              helping businesses build meaningful experiences in the digital
-              world.
+              Grosslead Media Private Limited is a next-generation digital marketing company specializing in programmatic advertising and high-quality lead generation. We focus on performance, and transparency, helping businesses achieve scalable growth through media buying and AI-driven campaign optimization.
+
+
             </p>
 
             <p>
-              From creative ideas to technology-driven solutions, we focus on
-              understanding the problem first and then building solutions that
-              are simple, useful and impactful.
+             We connect advertisers with a vast network of ad exchanges and direct sites through our advanced media buying team, ensuring high-intent leads and maximum ROI.
             </p>
 
             <Link to="/about" className="who-link">

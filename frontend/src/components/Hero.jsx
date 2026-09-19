@@ -12,7 +12,7 @@ const Hero = () => {
         <div className="hero-content">
           <div className="hero-tag">
             <span></span>
-            DIGITAL SOLUTIONS & TECHNOLOGY
+            Programmatic Precision,Performance Delivered.
           </div>
 
           <h1>

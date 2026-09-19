@@ -1,14 +1,32 @@
+
+
+
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
+import API_URL from "../config/api";
 import "../styles/Career.css";
 
 const Career = () => {
   const [careers, setCareers] = useState([]);
 
   useEffect(() => {
-    // Backend/API will be connected here later.
-    // Career openings added from Admin Panel will appear here.
+    const fetchCareers = async () => {
+      try {
+        const response = await fetch(`${API_URL}/api/careers`);
+        const data = await response.json();
+
+        if (response.ok) {
+          setCareers(data);
+        } else {
+          console.error("Failed to fetch careers:", data.message);
+        }
+      } catch (error) {
+        console.error("Error fetching careers:", error);
+      }
+    };
+
+    fetchCareers();
   }, []);
 
   return (
@@ -55,8 +73,56 @@ const Career = () => {
                     <h2>{career.title || career.name}</h2>
 
                     {career.description && (
-                      <p>{career.description}</p>
+                      <p className="career-description">
+                        {career.description}
+                      </p>
                     )}
+
+                    <div className="career-meta">
+                      {career.location && (
+                        <div className="career-meta-item">
+                          <span className="career-meta-label">
+                            Location
+                          </span>
+                          <span className="career-meta-value">
+                            {career.location}
+                          </span>
+                        </div>
+                      )}
+
+                      {career.type && (
+                        <div className="career-meta-item">
+                          <span className="career-meta-label">
+                            Job Type
+                          </span>
+                          <span className="career-meta-value">
+                            {career.type}
+                          </span>
+                        </div>
+                      )}
+
+                      {career.experience && (
+                        <div className="career-meta-item">
+                          <span className="career-meta-label">
+                            Experience
+                          </span>
+                          <span className="career-meta-value">
+                            {career.experience}
+                          </span>
+                        </div>
+                      )}
+
+                      {career.status && (
+                        <div className="career-meta-item">
+                          <span className="career-meta-label">
+                            Status
+                          </span>
+                          <span className="career-meta-value">
+                            {career.status}
+                          </span>
+                        </div>
+                      )}
+                    </div>
                   </div>
 
                   <span className="career-arrow">↗</span>
@@ -69,6 +135,7 @@ const Career = () => {
 
               <div>
                 <h2>New opportunities are coming.</h2>
+
                 <p>
                   There are currently no public openings. Check back soon for
                   new opportunities at Grosslead.
@@ -98,3 +165,4 @@ const Career = () => {
 };
 
 export default Career;
+
