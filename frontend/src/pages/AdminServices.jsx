@@ -57,7 +57,7 @@ import AdminTopbar from "../components/AdminTopbar";
 
 import "../styles/Admin.css";
 
-const API_URL = "http://localhost:5000";
+const API_URL = " https://updated-grooslead.onrender.com";
 
 const AdminServices = () => {
   const [services, setServices] = useState([]);
