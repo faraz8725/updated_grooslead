@@ -1,0 +1,268 @@
+.admin-layout {
+  min-height: 100vh;
+  background: #050505;
+  color: #ffffff;
+}
+
+.admin-main {
+  margin-left: 270px;
+  min-height: 100vh;
+}
+
+.admin-dashboard,
+.admin-management {
+  padding: 65px 45px;
+}
+
+.admin-welcome {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 50px;
+  margin-bottom: 55px;
+}
+
+.admin-section-label {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  color: #ffc107;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.admin-section-label i {
+  display: block;
+  width: 25px;
+  height: 2px;
+  background: #ff3030;
+}
+
+.admin-welcome h2,
+.admin-management-header h2 {
+  margin-top: 18px;
+  font-size: clamp(38px, 5vw, 65px);
+  line-height: 0.98;
+  letter-spacing: -2.5px;
+}
+
+.admin-welcome h2 span,
+.admin-management-header h2 span {
+  color: #ffc107;
+}
+
+.admin-welcome>p {
+  max-width: 370px;
+  color: #777;
+  line-height: 1.8;
+  font-size: 14px;
+}
+
+.admin-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin-bottom: 70px;
+}
+
+.admin-stat-card {
+  min-height: 210px;
+  padding: 28px;
+  background: #0b0b0b;
+  border: 1px solid #1d1d1d;
+  position: relative;
+  transition: 0.3s ease;
+}
+
+.admin-stat-card:hover {
+  border-color: #ffc107;
+  transform: translateY(-4px);
+}
+
+.admin-stat-card>span {
+  color: #ffc107;
+  font-size: 11px;
+}
+
+.admin-stat-card small {
+  display: block;
+  margin-top: 55px;
+  color: #666;
+  font-size: 9px;
+  letter-spacing: 2px;
+}
+
+.admin-stat-card strong {
+  display: block;
+  font-size: 42px;
+  margin-top: 5px;
+}
+
+.admin-stat-card p {
+  color: #777;
+  font-size: 12px;
+  margin-top: 8px;
+}
+
+.admin-quick-section {
+  border-top: 1px solid #1c1c1c;
+  padding-top: 30px;
+}
+
+.admin-quick-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.admin-quick-card {
+  min-height: 170px;
+  padding: 25px;
+  border: 1px solid #1d1d1d;
+  background: #090909;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  transition: 0.3s ease;
+}
+
+.admin-quick-card:hover {
+  border-color: #ffc107;
+  background: #101010;
+}
+
+.admin-quick-card small {
+  color: #ffc107;
+}
+
+.admin-quick-card h3 {
+  margin-top: 30px;
+  font-size: 18px;
+}
+
+.admin-quick-card p {
+  color: #666;
+  font-size: 12px;
+  margin-top: 8px;
+}
+
+.admin-quick-card>span {
+  color: #ffc107;
+  font-size: 20px;
+}
+
+.admin-management-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 30px;
+  margin-bottom: 55px;
+}
+
+.admin-primary-button {
+  background: #ffc107;
+  color: #050505;
+  padding: 15px 23px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.admin-primary-button:hover {
+  background: #ff3030;
+  color: #ffffff;
+}
+
+.admin-empty-state {
+  min-height: 260px;
+  border: 1px dashed #292929;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  padding: 40px;
+}
+
+.admin-empty-state>span {
+  width: 65px;
+  height: 65px;
+  border: 1px solid #ffc107;
+  color: #ffc107;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+}
+
+.admin-empty-state h3 {
+  font-size: 20px;
+}
+
+.admin-empty-state p {
+  margin-top: 8px;
+  color: #666;
+  font-size: 13px;
+  max-width: 500px;
+  line-height: 1.7;
+}
+
+@media (max-width: 900px) {
+  .admin-sidebar {
+    width: 220px;
+  }
+
+  .admin-main {
+    margin-left: 220px;
+  }
+
+  .admin-stats,
+  .admin-quick-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-welcome,
+  .admin-management-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 650px) {
+  .admin-sidebar {
+    position: relative;
+    width: 100%;
+    min-height: auto;
+  }
+
+  .admin-main {
+    margin-left: 0;
+  }
+
+  .admin-sidebar-nav {
+    flex-direction: row;
+    overflow-x: auto;
+  }
+
+  .admin-sidebar-bottom {
+    margin-top: 30px;
+  }
+
+  .admin-topbar {
+    padding: 20px;
+  }
+
+  .admin-dashboard,
+  .admin-management {
+    padding: 40px 20px;
+  }
+
+  .admin-user-info {
+    display: none;
+  }
+
+  .admin-empty-state {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}

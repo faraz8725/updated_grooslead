@@ -1,0 +1,106 @@
+.admin-sidebar {
+  width: 270px;
+  min-height: 100vh;
+  background: #080808;
+  border-right: 1px solid #1c1c1c;
+  padding: 35px 22px;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 100;
+}
+
+.admin-sidebar-logo {
+  font-size: 25px;
+  font-weight: 900;
+  letter-spacing: -1px;
+  margin-bottom: 60px;
+}
+
+.admin-sidebar-logo span {
+  color: #ffffff;
+}
+
+.admin-sidebar-logo strong {
+  color: #ffc107;
+}
+
+.admin-sidebar-label {
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: #666;
+  margin-bottom: 18px;
+}
+
+.admin-sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.admin-nav-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 14px;
+  color: #777;
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.3s ease;
+  border-left: 2px solid transparent;
+}
+
+.admin-nav-item:hover {
+  color: #ffffff;
+  background: #111111;
+}
+
+.admin-nav-item.active {
+  color: #ffffff;
+  background: #111111;
+  border-left-color: #ffc107;
+}
+
+.admin-nav-number {
+  font-size: 10px;
+  color: #ffc107;
+  letter-spacing: 1px;
+}
+
+.admin-sidebar-bottom {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.admin-back-button,
+.admin-logout-button {
+  width: 100%;
+  padding: 14px;
+  background: transparent;
+  border: 1px solid #222;
+  color: #888;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.admin-back-button:hover {
+  color: #ffffff;
+  border-color: #444;
+}
+
+.admin-logout-button {
+  display: flex;
+  justify-content: space-between;
+  color: #ffc107;
+  border-color: #ffc107;
+}
+
+.admin-logout-button:hover {
+  background: #ffc107;
+  color: #050505;
+}

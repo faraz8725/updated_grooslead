@@ -1,0 +1,13 @@
+.home-page {
+  width: 100%;
+  background: #050505;
+}
+
+.home-placeholder-section {
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #555555;
+  font-size: 13px;
+}
