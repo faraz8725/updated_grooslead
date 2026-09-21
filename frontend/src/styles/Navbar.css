@@ -1,6 +1,6 @@
  .navbar-wrapper {
   position: fixed;
-  top: 20px;
+  top: 0px;
   left: 50%;
   transform: translateX(-50%);
   width: calc(100% - 40px);
@@ -17,6 +17,7 @@
   gap: 25px;
 
   background: rgba(8, 8, 8, 0.88);
+           
   backdrop-filter: blur(18px);
   -webkit-backdrop-filter: blur(18px);
 
@@ -49,7 +50,8 @@
 }
 
 .logo-accent {
-  color: #ffc107;
+  /*color: var(--color-orange-500);*/
+  color:#f97316;
 }
 
 /* =========================
@@ -97,7 +99,7 @@
 
   height: 2px;
 
-  background: #ffc107;
+  background: #f97316;
 
   transform: scaleX(0);
   transform-origin: center;
@@ -237,7 +239,7 @@
   padding: 10px 17px;
 
   color: #111111;
-  background: #ffc107;
+  background: #f97316;
 
   border: 1px solid #ffc107;
   border-radius: 9px;
@@ -254,7 +256,7 @@
 }
 
 .login-button:hover {
-  background: #ffd54a;
+  background: #f97316;
 
   transform: translateY(-2px);
 
@@ -300,14 +302,14 @@
 }
 
 .profile-button:hover {
-  background: #ffc107;
+  background: #f97316;
   border-color: #ffc107;
 
   transform: translateY(-1px);
 }
 
 .profile-letter {
-  color: #ffc107;
+  color: #f97316;
 
   font-size: 15px;
   font-weight: 800;

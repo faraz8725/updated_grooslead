@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-
+import { Lightbulb, Cpu, TrendingUp } from "lucide-react";
 import "../styles/WhoWeAre.css";
 
 const WhoWeAre = () => {
@@ -39,17 +39,17 @@ const WhoWeAre = () => {
 
         <div className="who-bottom-line">
           <div>
-            <strong>01</strong>
+            <strong><Lightbulb size={28} /></strong>
             <span>Ideas</span>
           </div>
 
           <div>
-            <strong>02</strong>
+            <strong><Cpu size={28} /></strong>
             <span>Technology</span>
           </div>
 
           <div>
-            <strong>03</strong>
+            <strong><TrendingUp size={28} /></strong>
             <span>Growth</span>
           </div>
         </div>
