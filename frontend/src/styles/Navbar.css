@@ -693,49 +693,106 @@
 
 
 /* =========================
-   MOBILE
+   MOBILE NAVBAR
 ========================= */
 
-@media (max-width: 720px) {
+@media screen and (max-width: 720px) {
 
   .navbar-wrapper {
     top: 12px;
+    left: 50%;
     width: calc(100% - 24px);
+    max-width: none;
   }
 
   .navbar {
+    width: 100%;
     min-height: 62px;
+    padding: 0 10px;
+    gap: 8px;
     border-radius: 15px;
-    padding: 0 14px;
+
+    box-sizing: border-box;
   }
 
-  /* Hide desktop navigation */
-  .navbar-links {
-    display: none;
-  }
+  /* =========================
+     MOBILE LOGO
+  ========================= */
 
-  /* Logo */
   .navbar-logo {
-    font-size: 19px;
+    flex: 1;
+    min-width: 0;
+
+    display: flex;
+    align-items: center;
+
+    font-size: 14px;
+    letter-spacing: -0.5px;
+
+    white-space: nowrap;
+    overflow: hidden;
   }
 
-  /* Login icon */
-  .login-button span {
-    display: none;
+  .navbar-logo span {
+    flex-shrink: 0;
   }
+
+  /* =========================
+     DESKTOP NAV HIDE
+  ========================= */
+
+  .navbar-links {
+    display: none !important;
+  }
+
+  /* =========================
+     ACTIONS
+  ========================= */
+
+  .navbar-actions {
+    display: flex !important;
+    align-items: center;
+    gap: 6px;
+
+    flex-shrink: 0;
+  }
+
+  /* =========================
+     LOGIN
+  ========================= */
 
   .login-button {
     width: 40px;
     height: 40px;
+
     padding: 0;
+
+    display: flex;
+    align-items: center;
     justify-content: center;
+
+    flex-shrink: 0;
   }
 
-  /* SHOW HAMBURGER */
+  .login-button span {
+    display: none;
+  }
+
+  /* =========================
+     HAMBURGER
+  ========================= */
+
   .mobile-menu-button {
-    display: flex;
+    display: flex !important;
+
     width: 40px;
     height: 40px;
+
+    min-width: 40px;
+    min-height: 40px;
+
+    padding: 0;
+
     align-items: center;
     justify-content: center;
 
@@ -746,43 +803,53 @@
     border-radius: 9px;
 
     cursor: pointer;
+
+    flex-shrink: 0;
+
+    visibility: visible !important;
+    opacity: 1 !important;
   }
 
-  .mobile-menu-button:hover {
-    background: #ffc107;
-    color: #111111;
+  .mobile-menu-button svg {
+    display: block;
+    width: 24px;
+    height: 24px;
   }
 
-  /* Actions */
-  .navbar-actions {
+  /* =========================
+     PROFILE
+  ========================= */
+
+  .profile-area {
     display: flex;
     align-items: center;
-    gap: 7px;
-  }
-
-  /* Mobile menu */
-  .mobile-menu {
-    display: block;
-  }
-
-  /* Profile */
-  .profile-area {
-    gap: 7px;
+    gap: 6px;
+    flex-shrink: 0;
   }
 
   .profile-button {
     width: 40px;
     height: 40px;
+    flex-shrink: 0;
   }
 
   .logout-button {
     width: 38px;
     height: 38px;
+    flex-shrink: 0;
   }
 
-  .profile-dropdown {
-    top: 48px;
-    right: 0;
+  /* =========================
+     MOBILE MENU
+  ========================= */
+
+  .mobile-menu {
+    display: block;
+
+    margin-top: 10px;
+    padding: 12px;
+
+    width: 100%;
+    box-sizing: border-box;
   }
 }
-
