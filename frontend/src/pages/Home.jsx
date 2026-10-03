@@ -4,7 +4,7 @@ import ServicesSection from "../components/ServicesSection";
 import WhyGrosslead from "../components/WhyGrosslead";
 import OurProcess from "../components/OurProcess";
 import CareerCTA from "../components/CareerCTA";
-
+import InventorySection from "../components/InventorySection";
 import "../styles/Home.css";
 
 const Home = () => {
@@ -27,6 +27,9 @@ const Home = () => {
 
       {/* Career CTA */}
       <CareerCTA />
+
+      {/* Inventory section*/}
+      <InventorySection />
     </div>
   );
 };
