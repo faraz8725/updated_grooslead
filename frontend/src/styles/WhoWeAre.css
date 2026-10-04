@@ -1,181 +1,7 @@
-/*.who-section {
-  position: relative;
-  padding: 130px 40px;
-  background: #080808;
-  overflow: hidden;
-}
-
-.who-section::before {
-  content: "01";
-  position: absolute;  
-  right: 5%;
-  top: 60px;
-  font-size: 220px;
-  line-height: 1;
-  font-weight: 900;
-  color: rgba(255, 255, 255, 0.018);
-  pointer-events: none;
-}
-
-.who-container {
-  position: relative;
-  z-index: 2;
-  width: min(1220px, 100%);
-  margin: 0 auto;
-}
-
-.who-label {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  color: #ffc107;
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 2px;
-}
-
-.who-label span {
-  width: 28px;
-  height: 2px;
-  background: #ff3030;
-}
-
-.who-content {
-  display: grid;
-  grid-template-columns: 1fr 0.8fr;
-  gap: 100px;
-  margin-top: 35px;
-}
-
-.who-heading h2 {
-  max-width: 700px;
-  color: #ffffff;
-  font-size: clamp(42px, 5vw, 68px);
-  line-height: 1.05;
-  letter-spacing: -2.5px;
-  font-weight: 800;
-}
-
-.who-heading h2 span {
-  color: #ffc107;
-}
-
-.who-text {
-  padding-top: 8px;
-}
-
-.who-text p {
-  margin-bottom: 20px;
-  color: #999999;
-  font-size: 16px;
-  line-height: 1.8;
-}
-
-.who-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 12px;
-  margin-top: 12px;
-  color: #ffffff;
-  text-decoration: none;
-  font-size: 13px;
-  font-weight: 700;
-  border-bottom: 1px solid #ffc107;
-  padding-bottom: 8px;
-  transition: 0.3s ease;
-}
-
-.who-link span {
-  color: #ffc107;
-  font-size: 18px;
-}
-
-.who-link:hover {
-  color: #ffc107;
-  gap: 18px;
-}
-
-.who-bottom-line {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  margin-top: 90px;
-  border-top: 1px solid #252525;
-}
-
-.who-bottom-line div {
-  padding: 28px 20px 0 0;
-  display: flex;
-  align-items: center;
-  gap: 18px;
-  border-right: 1px solid #252525;
-}
-
-.who-bottom-line div:not(:first-child) {
-  padding-left: 25px;
-}
-
-.who-bottom-line div:last-child {
-  border-right: none;
-}
-
-.who-bottom-line strong {
-  color: #ffc107;
-  font-size: 13px;
-}
-
-.who-bottom-line span {
-  color: #d0d0d0;
-  font-size: 13px;
-  font-weight: 600;
-  letter-spacing: 1px;
-}
-
-/* RESPONSIVE *
-
-@media (max-width: 900px) {
-  .who-content {
-    grid-template-columns: 1fr;
-    gap: 35px;
-  }
-
-  .who-text {
-    max-width: 700px;
-  }
-}
-
-@media (max-width: 600px) {
-  .who-section {
-    padding: 90px 20px;
-  }
-
-  .who-heading h2 {
-    font-size: 42px;
-  }
-
-  .who-text p {
-    font-size: 15px;
-  }
-
-  .who-bottom-line {
-    grid-template-columns: 1fr;
-    margin-top: 55px;
-  }
-
-  .who-bottom-line div,
-  .who-bottom-line div:not(:first-child) {
-    padding: 18px 0;
-    border-right: none;
-    border-bottom: 1px solid #252525;
-  }
-
-  .who-bottom-line div:last-child {
-    border-bottom: none;
-  }
-}   */
 
 
 
-
+/*
 
  .who-section {
   position: relative;
@@ -309,7 +135,7 @@
   letter-spacing: 1px;
 }
 
-/* RESPONSIVE */
+/* RESPONSIVE *
 
 @media (max-width: 900px) {
   .who-content {
@@ -351,3 +177,1117 @@
     border-bottom: none;
   }
 }
+
+*/
+
+/*
+
+ .who-section {
+  position: relative;
+
+  padding: 130px 40px;
+
+  background: #ffffff;
+
+  overflow: hidden;
+}
+
+.who-section::before {
+  content: "01";
+
+  position: absolute;
+
+  right: 5%;
+  top: 60px;
+
+  font-size: 220px;
+  line-height: 1;
+
+  font-weight: 900;
+
+  color: rgba(0, 0, 0, 0.035);
+
+  pointer-events: none;
+}
+
+.who-container {
+  position: relative;
+  z-index: 2;
+
+  width: min(1220px, 100%);
+
+  margin: 0 auto;
+}
+
+/* =========================
+   WHO WE ARE
+========================= *
+
+.who-label {
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+
+  color: #f97316;
+
+  font-size: 11px;
+  font-weight: 700;
+
+  letter-spacing: 2px;
+}
+
+.who-label span {
+  width: 28px;
+  height: 2px;
+
+  background: #ff3030;
+}
+
+.who-content {
+  display: grid;
+
+  grid-template-columns: 1fr 0.8fr;
+
+  gap: 100px;
+
+  margin-top: 35px;
+}
+
+.who-heading h2 {
+  max-width: 700px;
+
+  color: #000000;
+
+  font-size: clamp(42px, 5vw, 68px);
+
+  line-height: 1.05;
+
+  letter-spacing: -2.5px;
+
+  font-weight: 800;
+}
+
+.who-heading h2 span {
+  color: #f97316;
+}
+
+.who-text {
+  padding-top: 8px;
+}
+
+.who-text p {
+  margin-bottom: 20px;
+
+  color: #555555;
+
+  font-size: 16px;
+
+  line-height: 1.8;
+}
+
+.who-link {
+  display: inline-flex;
+  align-items: center;
+
+  gap: 12px;
+
+  margin-top: 12px;
+
+  color: #000000;
+
+  text-decoration: none;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  border-bottom: 1px solid #f97316;
+
+  padding-bottom: 8px;
+
+  transition: 0.3s ease;
+}
+
+.who-link span {
+  color: #f97316;
+
+  font-size: 18px;
+}
+
+.who-link:hover {
+  color: #f97316;
+
+  gap: 18px;
+}
+
+/* =========================
+   HIGHLIGHTS
+========================= *
+
+.who-bottom-line {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  margin-top: 90px;
+
+  border-top: 1px solid #dddddd;
+}
+
+.who-bottom-line div {
+  padding: 28px 20px 0 0;
+
+  display: flex;
+  align-items: center;
+
+  gap: 18px;
+
+  border-right: 1px solid #dddddd;
+}
+
+.who-bottom-line div:not(:first-child) {
+  padding-left: 25px;
+}
+
+.who-bottom-line div:last-child {
+  border-right: none;
+}
+
+.who-bottom-line strong {
+  color: #f97316;
+
+  font-size: 13px;
+}
+
+.who-bottom-line span {
+  color: #333333;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  letter-spacing: 1px;
+}
+
+/* =========================
+   CEO SECTION
+========================= *
+
+.ceo-section {
+  display: grid;
+
+  grid-template-columns: 0.85fr 1.15fr;
+
+  gap: 85px;
+
+  align-items: center;
+
+  margin-top: 125px;
+
+  padding-top: 90px;
+
+  border-top: 1px solid #dddddd;
+}
+
+/* =========================
+   CEO IMAGE
+========================= *
+
+.ceo-image-wrapper {
+  position: relative;
+}
+
+.ceo-image-frame {
+  position: relative;
+
+  width: 100%;
+
+  aspect-ratio: 0.88;
+
+  overflow: hidden;
+
+  background: #111111;
+
+  border-radius: 3px;
+
+  box-shadow:
+    10px 10px 0 #ffc107,
+    18px 18px 0 rgba(255, 48, 48, 0.7);
+}
+
+.ceo-image {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+
+  filter: grayscale(12%);
+
+  transition:
+    transform 0.6s ease,
+    filter 0.6s ease;
+}
+
+.ceo-image-frame:hover .ceo-image {
+  transform: scale(1.04);
+
+  filter: grayscale(0%);
+}
+
+.ceo-image-tag {
+  position: absolute;
+
+  left: 20px;
+  bottom: 20px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 8px;
+
+  padding: 9px 13px;
+
+  color: #ffffff;
+
+  background: rgba(0, 0, 0, 0.82);
+
+  font-size: 9px;
+  font-weight: 800;
+
+  letter-spacing: 1.7px;
+}
+
+.ceo-image-tag span {
+  width: 7px;
+  height: 7px;
+
+  border-radius: 50%;
+
+  background: #ffc107;
+}
+
+/* =========================
+   CEO CONTENT
+========================= *
+
+.ceo-content {
+  position: relative;
+
+  padding: 10px 0;
+}
+
+.ceo-label {
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+
+  margin-bottom: 15px;
+
+  color: #f97316;
+
+  font-size: 11px;
+  font-weight: 800;
+
+  letter-spacing: 2px;
+}
+
+.ceo-label span {
+  width: 28px;
+  height: 2px;
+
+  background: #ff3030;
+}
+
+.ceo-quote-mark {
+  position: absolute;
+
+  top: 0;
+  right: 0;
+
+  color: rgba(249, 115, 22, 0.15);
+
+  font-family: Georgia, serif;
+
+  font-size: 130px;
+
+  line-height: 0.8;
+
+  pointer-events: none;
+}
+
+.ceo-content h3 {
+  position: relative;
+
+  max-width: 650px;
+
+  margin: 15px 0 28px;
+
+  color: #111111;
+
+  font-size: clamp(34px, 4vw, 53px);
+
+  line-height: 1.08;
+
+  letter-spacing: -2px;
+
+  font-weight: 800;
+}
+
+.ceo-content h3 span {
+  color: #f97316;
+}
+
+.ceo-message {
+  max-width: 620px;
+
+  margin-bottom: 17px;
+
+  color: #555555;
+
+  font-size: 15px;
+
+  line-height: 1.8;
+}
+
+/* =========================
+   CEO SIGNATURE
+========================= *
+
+.ceo-signature {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  max-width: 620px;
+
+  margin-top: 32px;
+
+  padding-top: 22px;
+
+  border-top: 1px solid #dddddd;
+}
+
+.ceo-signature div:first-child {
+  display: flex;
+  flex-direction: column;
+
+  gap: 5px;
+}
+
+.ceo-signature strong {
+  color: #111111;
+
+  font-size: 13px;
+  font-weight: 800;
+
+  letter-spacing: 0.5px;
+}
+
+.ceo-signature span {
+  color: #888888;
+
+  font-size: 11px;
+}
+
+.ceo-arrow {
+  width: 42px;
+  height: 42px;
+
+  display: grid;
+  place-items: center;
+
+  color: #111111;
+
+  background: #ffc107;
+
+  border-radius: 50%;
+
+  transition:
+    transform 0.3s ease,
+    background 0.3s ease;
+}
+
+.ceo-signature:hover .ceo-arrow {
+  transform: rotate(45deg);
+
+  background: #ff3030;
+
+  color: #ffffff;
+}
+
+/* =========================
+   TABLET
+========================= *
+
+@media (max-width: 900px) {
+  .who-content {
+    grid-template-columns: 1fr;
+
+    gap: 35px;
+  }
+
+  .who-text {
+    max-width: 700px;
+  }
+
+  .ceo-section {
+    grid-template-columns: 1fr;
+
+    gap: 55px;
+
+    margin-top: 100px;
+
+    padding-top: 70px;
+  }
+
+  .ceo-image-frame {
+    max-width: 600px;
+
+    aspect-ratio: 1.15;
+  }
+
+  .ceo-content {
+    max-width: 700px;
+  }
+}
+
+/* =========================
+   MOBILE
+========================= *
+
+@media (max-width: 600px) {
+  .who-section {
+    padding: 90px 20px;
+  }
+
+  .who-section::before {
+    right: -10px;
+    top: 45px;
+
+    font-size: 130px;
+  }
+
+  .who-heading h2 {
+    font-size: 42px;
+  }
+
+  .who-text p {
+    font-size: 15px;
+  }
+
+  .who-bottom-line {
+    grid-template-columns: 1fr;
+
+    margin-top: 55px;
+  }
+
+  .who-bottom-line div,
+  .who-bottom-line div:not(:first-child) {
+    padding: 18px 0;
+
+    border-right: none;
+
+    border-bottom: 1px solid #dddddd;
+  }
+
+  .who-bottom-line div:last-child {
+    border-bottom: none;
+  }
+
+  /* CEO *
+
+  .ceo-section {
+    gap: 40px;
+
+    margin-top: 75px;
+
+    padding-top: 60px;
+  }
+
+  .ceo-image-frame {
+    aspect-ratio: 0.95;
+
+    box-shadow:
+      6px 6px 0 #ffc107,
+      11px 11px 0 rgba(255, 48, 48, 0.7);
+  }
+
+  .ceo-image-tag {
+    left: 12px;
+    bottom: 12px;
+
+    padding: 8px 10px;
+
+    font-size: 8px;
+  }
+
+  .ceo-quote-mark {
+    top: 5px;
+    right: 0;
+
+    font-size: 90px;
+  }
+
+  .ceo-content h3 {
+    margin-top: 12px;
+    margin-bottom: 22px;
+
+    font-size: 35px;
+
+    letter-spacing: -1.5px;
+  }
+
+  .ceo-message {
+    font-size: 14px;
+
+    line-height: 1.75;
+  }
+
+  .ceo-signature {
+    margin-top: 25px;
+  }
+
+  .ceo-arrow {
+    width: 38px;
+    height: 38px;
+  }
+}
+
+*/
+ .who-section {
+  position: relative;
+
+  padding: 130px 40px;
+
+  background: #ffffff;
+
+  overflow: hidden;
+}
+
+.who-section::before {
+  content: "01";
+
+  position: absolute;
+
+  right: 5%;
+  top: 60px;
+
+  font-size: 220px;
+  line-height: 1;
+
+  font-weight: 900;
+
+  color: rgba(0, 0, 0, 0.035);
+
+  pointer-events: none;
+}
+
+.who-container {
+  position: relative;
+  z-index: 2;
+
+  width: min(1220px, 100%);
+
+  margin: 0 auto;
+}
+
+/* =========================
+   WHO WE ARE
+========================= */
+
+.who-label {
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+
+  color: #f97316;
+
+  font-size: 11px;
+  font-weight: 700;
+
+  letter-spacing: 2px;
+}
+
+.who-label span {
+  width: 28px;
+  height: 2px;
+
+  background: #ff3030;
+}
+
+.who-content {
+  display: grid;
+
+  grid-template-columns: 1fr 0.8fr;
+
+  gap: 100px;
+
+  margin-top: 35px;
+}
+
+.who-heading h2 {
+  max-width: 700px;
+
+  color: #000000;
+
+  font-size: clamp(42px, 5vw, 68px);
+
+  line-height: 1.05;
+
+  letter-spacing: -2.5px;
+
+  font-weight: 800;
+}
+
+.who-heading h2 span {
+  color: #f97316;
+}
+
+.who-text {
+  padding-top: 8px;
+}
+
+.who-text p {
+  margin-bottom: 20px;
+
+  color: #555555;
+
+  font-size: 16px;
+
+  line-height: 1.8;
+}
+
+.who-link {
+  display: inline-flex;
+  align-items: center;
+
+  gap: 12px;
+
+  margin-top: 12px;
+
+  color: #000000;
+
+  text-decoration: none;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  border-bottom: 1px solid #f97316;
+
+  padding-bottom: 8px;
+
+  transition: 0.3s ease;
+}
+
+.who-link span {
+  color: #f97316;
+
+  font-size: 18px;
+}
+
+.who-link:hover {
+  color: #f97316;
+
+  gap: 18px;
+}
+
+/* =========================
+   HIGHLIGHTS
+========================= */
+
+.who-bottom-line {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  margin-top: 90px;
+
+  border-top: 1px solid #dddddd;
+}
+
+.who-bottom-line div {
+  padding: 28px 20px 0 0;
+
+  display: flex;
+  align-items: center;
+
+  gap: 18px;
+
+  border-right: 1px solid #dddddd;
+}
+
+.who-bottom-line div:not(:first-child) {
+  padding-left: 25px;
+}
+
+.who-bottom-line div:last-child {
+  border-right: none;
+}
+
+.who-bottom-line strong {
+  color: #f97316;
+
+  font-size: 13px;
+}
+
+.who-bottom-line span {
+  color: #333333;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  letter-spacing: 1px;
+}
+
+/* =========================
+   CEO SECTION
+========================= */
+
+.ceo-section {
+  display: grid;
+
+  grid-template-columns: 0.85fr 1.15fr;
+
+  gap: 85px;
+
+  align-items: center;
+
+  margin-top: 125px;
+
+  padding-top: 90px;
+
+  border-top: 1px solid #dddddd;
+}
+
+/* =========================
+   CEO PHOTO
+========================= */
+
+.ceo-image-wrapper {
+  width: 100%;
+}
+
+.ceo-image-frame {
+  width: 100%;
+
+  overflow: hidden;
+
+  background: #f3f3f3;
+
+  border-radius: 8px;
+}
+
+.ceo-image {
+  width: 100%;
+  height: 520px;
+
+  display: block;
+
+  object-fit: cover;
+
+  filter: grayscale(8%);
+
+  transition:
+    transform 0.5s ease,
+    filter 0.5s ease;
+}
+
+.ceo-image-frame:hover .ceo-image {
+  transform: scale(1.02);
+
+  filter: grayscale(0%);
+}
+
+.ceo-image-tag {
+  display: none;
+}
+
+/* =========================
+   CEO CONTENT
+========================= */
+
+.ceo-content {
+  position: relative;
+
+  padding: 10px 0;
+}
+
+.ceo-label {
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+
+  margin-bottom: 15px;
+
+  color: #f97316;
+
+  font-size: 11px;
+  font-weight: 800;
+
+  letter-spacing: 2px;
+}
+
+.ceo-label span {
+  width: 28px;
+  height: 2px;
+
+  background: #ff3030;
+}
+
+.ceo-quote-mark {
+  position: absolute;
+
+  top: 0;
+  right: 0;
+
+  color: rgba(249, 115, 22, 0.15);
+
+  font-family: Georgia, serif;
+
+  font-size: 130px;
+
+  line-height: 0.8;
+
+  pointer-events: none;
+}
+
+.ceo-content h3 {
+  position: relative;
+
+  max-width: 650px;
+
+  margin: 15px 0 28px;
+
+  color: #111111;
+
+  font-size: clamp(34px, 4vw, 53px);
+
+  line-height: 1.08;
+
+  letter-spacing: -2px;
+
+  font-weight: 800;
+}
+
+.ceo-content h3 span {
+  color: #f97316;
+}
+
+.ceo-message {
+  max-width: 620px;
+
+  margin-bottom: 17px;
+
+  color: #555555;
+
+  font-size: 15px;
+
+  line-height: 1.8;
+}
+
+/* =========================
+   CEO SIGNATURE
+========================= */
+
+.ceo-signature {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  max-width: 620px;
+
+  margin-top: 32px;
+
+  padding-top: 22px;
+
+  border-top: 1px solid #dddddd;
+}
+
+.ceo-signature div:first-child {
+  display: flex;
+  flex-direction: column;
+
+  gap: 5px;
+}
+
+.ceo-signature strong {
+  color: #111111;
+
+  font-size: 13px;
+  font-weight: 800;
+
+  letter-spacing: 0.5px;
+}
+
+.ceo-signature span {
+  color: #888888;
+
+  font-size: 11px;
+}
+
+.ceo-arrow {
+  width: 42px;
+  height: 42px;
+
+  display: grid;
+  place-items: center;
+
+  color: #111111;
+
+  background: #ffc107;
+
+  border-radius: 50%;
+
+  transition:
+    transform 0.3s ease,
+    background 0.3s ease;
+}
+
+.ceo-signature:hover .ceo-arrow {
+  transform: rotate(45deg);
+
+  background: #ff3030;
+
+  color: #ffffff;
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+  .who-content {
+    grid-template-columns: 1fr;
+
+    gap: 35px;
+  }
+
+  .who-text {
+    max-width: 700px;
+  }
+
+  .ceo-section {
+    grid-template-columns: 1fr;
+
+    gap: 55px;
+
+    margin-top: 100px;
+
+    padding-top: 70px;
+  }
+
+  .ceo-image-frame {
+    max-width: 600px;
+  }
+
+  .ceo-image {
+    height: 430px;
+  }
+
+  .ceo-content {
+    max-width: 700px;
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+  .who-section {
+    padding: 90px 20px;
+  }
+
+  .who-section::before {
+    right: -10px;
+
+    top: 45px;
+
+    font-size: 130px;
+  }
+
+  .who-heading h2 {
+    font-size: 42px;
+  }
+
+  .who-text p {
+    font-size: 15px;
+  }
+
+  .who-bottom-line {
+    grid-template-columns: 1fr;
+
+    margin-top: 55px;
+  }
+
+  .who-bottom-line div,
+  .who-bottom-line div:not(:first-child) {
+    padding: 18px 0;
+
+    border-right: none;
+
+    border-bottom: 1px solid #dddddd;
+  }
+
+  .who-bottom-line div:last-child {
+    border-bottom: none;
+  }
+
+  /* CEO */
+
+  .ceo-section {
+    gap: 40px;
+
+    margin-top: 75px;
+
+    padding-top: 60px;
+  }
+
+  .ceo-image-frame {
+    max-width: 100%;
+
+    border-radius: 6px;
+  }
+
+  .ceo-image {
+    height: 360px;
+  }
+
+  .ceo-quote-mark {
+    top: 5px;
+
+    right: 0;
+
+    font-size: 90px;
+  }
+
+  .ceo-content h3 {
+    margin-top: 12px;
+
+    margin-bottom: 22px;
+
+    font-size: 35px;
+
+    letter-spacing: -1.5px;
+  }
+
+  .ceo-message {
+    font-size: 14px;
+
+    line-height: 1.75;
+  }
+
+  .ceo-signature {
+    margin-top: 25px;
+  }
+
+  .ceo-arrow {
+    width: 38px;
+    height: 38px;
+  }
+}
+

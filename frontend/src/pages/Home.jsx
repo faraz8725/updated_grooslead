@@ -5,6 +5,7 @@ import WhyGrosslead from "../components/WhyGrosslead";
 import OurProcess from "../components/OurProcess";
 import CareerCTA from "../components/CareerCTA";
 import InventorySection from "../components/InventorySection";
+import CEOMessage from "../components/CEOMessage";
 import "../styles/Home.css";
 
 const Home = () => {
@@ -15,7 +16,8 @@ const Home = () => {
 
       {/* Who We Are */}
       <WhoWeAre />
-
+        {/* CEO Message*/}
+        <CEOMessage/>
       {/* Services */}
       <ServicesSection />
 

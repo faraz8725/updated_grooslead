@@ -52,7 +52,7 @@ import Login from "./pages/Login";
 import AdminDashboard from "./pages/AdminDashboard";
 import AdminServices from "./pages/AdminServices";
 import AdminCareers from "./pages/AdminCareers";
-
+import Team from "./pages/Team";
 import "./styles/App.css";
 
 function App() {
@@ -64,6 +64,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/career" element={<Career />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/team" element={<Team />} />
         <Route path="/login" element={<Login />} />
         <Route path="/services/:slug" element={<ServiceDetails />} />
       </Route>
