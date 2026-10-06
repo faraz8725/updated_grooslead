@@ -8,7 +8,7 @@ import AdminTopbar from "../components/AdminTopbar";
 
 import "../styles/Admin.css";
 
-const API_URL = " https://updated-grooslead.onrender.com";
+const API_URL = " https://grooslead.onrender.com";
 
 const AdminCareers = () => {
   const [careers, setCareers] = useState([]);
