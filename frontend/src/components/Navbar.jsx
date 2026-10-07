@@ -480,8 +480,7 @@ const Navbar = () => {
         >
           <span className="logo-main">GROSS</span>
           <span className="logo-accent">LEAD</span>
-          <span className="logo-main">PRIVATE</span>
-          <span className="logo-accent">LIMITED</span>
+         
         </Link>
 
         {/* DESKTOP NAVIGATION */}
