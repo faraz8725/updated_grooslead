@@ -1,4 +1,4 @@
-.admin-topbar {
+/*.admin-topbar {
   min-height: 95px;
   padding: 25px 45px;
   border-bottom: 1px solid #1a1a1a;
@@ -50,6 +50,68 @@
   border-radius: 50%;
   background: #ffc107;
   color: #050505;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+} */
+
+
+.admin-topbar {
+  min-height: 95px;
+  padding: 25px 45px;
+  border-bottom: 1px solid #e5e5e5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffffff;
+  color: #000000;
+}
+
+.admin-topbar-label {
+  display: block;
+  font-size: 9px;
+  letter-spacing: 2px;
+  color: #f97316;
+  margin-bottom: 7px;
+}
+
+.admin-topbar h1 {
+  font-size: 21px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.admin-user {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+
+.admin-user-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 3px;
+}
+
+.admin-user-info strong {
+  font-size: 13px;
+  color: #000000;
+}
+
+.admin-user-info span {
+  font-size: 10px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.admin-user-avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: #f97316;
+  color: #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;

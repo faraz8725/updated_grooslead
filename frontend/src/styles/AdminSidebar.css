@@ -1,4 +1,4 @@
-.admin-sidebar {
+/*.admin-sidebar {
   width: 270px;
   min-height: 100vh;
   background: #080808;
@@ -103,4 +103,115 @@
 .admin-logout-button:hover {
   background: #ffc107;
   color: #050505;
+} */
+
+
+
+.admin-sidebar {
+  width: 270px;
+  min-height: 100vh;
+  background: #ffffff;
+  border-right: 1px solid #e5e5e5;
+  padding: 35px 22px;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 100;
+}
+
+.admin-sidebar-logo {
+  font-size: 25px;
+  font-weight: 900;
+  letter-spacing: -1px;
+  margin-bottom: 60px;
+  color: #000000;
+}
+
+.admin-sidebar-logo span {
+  color: #000000;
+}
+
+.admin-sidebar-logo strong {
+  color: #f97316;
+}
+
+.admin-sidebar-label {
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: #000000;
+  margin-bottom: 18px;
+}
+
+.admin-sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.admin-nav-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 14px;
+  color: #000000;
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.3s ease;
+  border-left: 2px solid transparent;
+}
+
+.admin-nav-item:hover {
+  color: #000000;
+  background: #fff7ed;
+}
+
+.admin-nav-item.active {
+  color: #000000;
+  background: #fff7ed;
+  border-left-color: #f97316;
+}
+
+.admin-nav-number {
+  font-size: 10px;
+  color: #f97316;
+  letter-spacing: 1px;
+}
+
+.admin-sidebar-bottom {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.admin-back-button,
+.admin-logout-button {
+  width: 100%;
+  padding: 14px;
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  color: #000000;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.admin-back-button:hover {
+  color: #000000;
+  background: #fff7ed;
+  border-color: #f97316;
+}
+
+.admin-logout-button {
+  display: flex;
+  justify-content: space-between;
+  color: #f97316;
+  border-color: #f97316;
+}
+
+.admin-logout-button:hover {
+  background: #fef3c7;
+  color: #000000;
 }
