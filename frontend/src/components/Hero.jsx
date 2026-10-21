@@ -12,7 +12,7 @@ const Hero = () => {
         <div className="hero-content">
           <div className="hero-tag">
             
-            Programmatic Precision,Performance Delivered.
+            PROGRAMATIC PRECISON,PERFORMANCE DELIVERED.
           </div>
 
           <h1>
