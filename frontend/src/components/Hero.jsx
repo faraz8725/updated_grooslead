@@ -11,7 +11,7 @@ const Hero = () => {
       <div className="hero-container">
         <div className="hero-content">
           <div className="hero-tag">
-            <span></span>
+            
             Programmatic Precision,Performance Delivered.
           </div>
 

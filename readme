@@ -1,0 +1,16 @@
+Line-63{HERO . CSS}
+
+  font-size: clamp(48px, 6vw, 82px);
+  line-height: 0.98;
+  letter-spacing: -3px;
+  font-weight: 800;
+  color: #000000;
+
+
+    Line- 321 
+    .hero h1 {
+      font-size: 46px;
+      letter-spacing: -2px;
+    }
+
+    line-14 <span></span> remove
