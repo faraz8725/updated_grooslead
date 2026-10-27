@@ -70,7 +70,7 @@ CEO CONTENT
 
   color: #f97316;
 
-  font-size: 11px;
+  font-size: 30px;
   font-weight: 800;
 
   letter-spacing: 2px;
@@ -98,7 +98,7 @@ CEO CONTENT
 
   pointer-events: none;
 }
-
+/*
 .ceo-content h3 {
   position: relative;
 
@@ -115,7 +115,17 @@ CEO CONTENT
   letter-spacing: -2px;
 
   font-weight: 800;
-}
+} */
+ .ceo-content h3 {
+   position: relative;
+   max-width: 650px;
+   margin: 15px 0 28px;
+   color: #111111;
+   font-size: 40px !important;
+   line-height: 1.1 !important;
+   letter-spacing: -1px !important;
+   font-weight: 800;
+ }
 
 .ceo-content h3 span {
   color: #f97316;
