@@ -30,7 +30,7 @@
   height: 2px;
   background: #f97316;
 }
-
+/*
 .process-heading h2 {
   margin-top: 30px;
   color: #000000;
@@ -38,7 +38,15 @@
   line-height: 1;
   letter-spacing: -3px;
   font-weight: 800;
-}
+} */
+ .process-heading h2 {
+   margin-top: 30px;
+   color: #000000;
+   font-size: 40px !important;
+   line-height: 1.1 !important;
+   letter-spacing: -1px !important;
+   font-weight: 800;
+ }
 
 .process-heading h2 span {
   color: #f97316;
