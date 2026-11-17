@@ -8,7 +8,8 @@ import AdminTopbar from "../components/AdminTopbar";
 
 import "../styles/Admin.css";
 
-const API_URL = " https://grooslead.onrender.com";
+//const API_URL = " https://grooslead.onrender.com";
+const API_URL = import.meta.env.VITE_API_URL;
 
 const AdminCareers = () => {
   const [careers, setCareers] = useState([]);
